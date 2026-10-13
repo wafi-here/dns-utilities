@@ -16,7 +16,7 @@ SERVER_IP="${SERVER_IP:-192.168.56.102}"
 
 # -------------------- VALIDASI INPUT ----------------------
 
-if [[ "$EUID" -ne 0 ]]; then
+if [ "$(id -u)" -ne 0 ]; then
     echo "Error: Jalankan script menggunakan sudo."
     echo "Contoh: sudo ./setup-dns.sh"
     exit 1
