@@ -152,15 +152,15 @@ named-checkzone "$REVERSE_ZONE_NAME" "$REVERSE_FILE"
 
 echo "Mengaktifkan service BIND9..."
 
-systemctl enable --now bind9
-systemctl restart bind9
+systemctl enable --now named
+systemctl restart named
 
 echo
 echo "=================================================="
 echo " DNS SERVER BERHASIL DIKONFIGURASI"
 echo "=================================================="
 
-systemctl --no-pager --full status bind9
+systemctl --no-pager --full status named
 
 echo
 echo "Pengujian DNS lokal:"
