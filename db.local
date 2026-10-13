@@ -1,0 +1,12 @@
+$TTL    604800
+@   IN  SOA ns1.homelab.local. admin.homelab.local. (
+                  2026101301 ; Serial
+                  600        ; Refresh
+                  150        ; Retry
+                  2419200    ; Expire
+                  604800 )   ; Negative Cache TTL
+
+@   IN  NS  ns1.homelab.local.
+@   IN  A   192.168.56.10
+ns1 IN  A   192.168.56.10
+www IN  A   192.168.56.10
